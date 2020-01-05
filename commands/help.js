@@ -14,7 +14,7 @@ module.exports.run = async(bot, message, args) => {
 
                 .setTitle("† Team Vaynce | Command List")
                 .setDescription("Prefix: **.**")
-                .addField("Normal Commands:", ".help\n.info\n", true)
+                .addField("Normal Commands:", ".help\n.info\n**more coming soon.**", true)
                 .setColor("RANDOM")
                 .setTimestamp(Date.now())
                 .setFooter('Created by avoidfx.', 'https://cdn.discordapp.com/attachments/543719668544700427/659347313311088660/avoid_profilbild_end.png')
@@ -27,8 +27,8 @@ module.exports.run = async(bot, message, args) => {
 
                 .setTitle("† Team Vaynce | Command List")
                 .setDescription("Prefix: **.**")
-                .addField("Admin Commands:", ".del <amount>\n.mute <reason>\n.unmute", true)
-                .addField("Normal Commands:", ".help\n.info\n", true)
+                .addField("Admin Commands:", ".del <amount>\n**more coming soon.**", true)
+                .addField("Normal Commands:", ".help\n.info\n**more coming soon.**", true)
                 .setColor("RANDOM")
                 .setTimestamp(Date.now())
                 .setFooter('Created by avoidfx.', 'https://cdn.discordapp.com/attachments/543719668544700427/659347313311088660/avoid_profilbild_end.png')

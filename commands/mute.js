@@ -1,7 +1,7 @@
 const Discord = require ("discord.js");
 const colours = require ("../colours.json");
 const botconfig = require ("../botconfig.json");
-const hook = new Discord.WebhookClient('662852174585528340', '79iuNzniv7y-JA7CcB12KHOPXpHkHOTlV4RwQbUm1I3WlhqLR4WvL3uxL3jIXjjG7tyZ');
+const hook = new Discord.WebhookClient('663181513948659723', '95K9vplxMkFH9bRSVXnhItbFaYHD82zJpVAbyJHq5rdkcnPAEnOTIONndb0nv4T3ROzX');
 
 module.exports.run = async (bot, message, args) => {
 

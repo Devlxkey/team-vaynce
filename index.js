@@ -1,12 +1,15 @@
 const botconfig = require("./botconfig.json");
 const login     = require("./login.json");
 const Discord   = require("discord.js");
+const ownerID   = '381538605685932032';
+const active    = new Map();
 const colours   = require ("./colours.json");
 const fs        = require("fs");
 const path      = require('path');
 const bot       = new Discord.Client({ disableEveryone: true });
-const logs = new Discord.WebhookClient('662852174585528340', '79iuNzniv7y-JA7CcB12KHOPXpHkHOTlV4RwQbUm1I3WlhqLR4WvL3uxL3jIXjjG7tyZ');
-const welcomer = new Discord.WebhookClient('662856589421576202', 'WHcnoyKA5pLOArnXGekjRVQ1ZDrcGQR5HSrUYSDr1nj1a-naMqkPNlNgcqh7Wpb1suks');
+const client    = new Discord.Client();
+const logs = new Discord.WebhookClient('663181513948659723', '95K9vplxMkFH9bRSVXnhItbFaYHD82zJpVAbyJHq5rdkcnPAEnOTIONndb0nv4T3ROzX');
+const welcomer = new Discord.WebhookClient('663181391546023948', '0_6rAzDOJWBRDl3FfSjwmX5IWHYu_7qiqKHbwlZkmhWfNbEXt7zR7PMr5k46wiGT7RdN');
 
 bot.commands = new Discord.Collection();
 bot.aliases  = new Discord.Collection(); 
@@ -68,10 +71,10 @@ bot.on('message', (message) => {
 bot.on('guildMemberAdd', async message => {
     //console.log(`${message.id} joined the server.`); // This just gives you the ID from the joined user
 
-    let rulesChannel = message.guild.channels.find(channel => channel.id === '662742895924609024')
+    let rulesChannel = message.guild.channels.find(channel => channel.id === '663116866805563432')
 
     welcomer.send(`Welcome ${message} before you do anything else, please read our ${rulesChannel}`) // this is the channel where the welcome message goes
-    let memberRole = message.guild.roles.find(role => role.id === '660594897115545600'); // this is the role that you are giving to
+    let memberRole = message.guild.roles.find(role => role.id === '632865092836261899'); // this is the role that you are giving to
     message.addRole(memberRole)
 });
 

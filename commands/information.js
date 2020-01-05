@@ -5,7 +5,7 @@ let something = require("../colours.json")
 
 module.exports.run = async (bot, message, args) => {
 
-    if (message.member.roles.some(r=>["† user."].includes(r.name))){
+    if (message.member.roles.some(r=>["● User"].includes(r.name))){
         if (!message.content.startsWith(botconfig.prefix)) return;
 
         let botembed = new Discord.RichEmbed()
