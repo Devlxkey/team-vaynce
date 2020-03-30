@@ -44,6 +44,12 @@ bot.on("ready", async () => {
 
     let activities = [`${bot.users.size} users.`], i = 0; // `${bot.guilds.size} servers.`, `${bot.users.size} users.`, 
     setInterval(() => bot.user.setActivity(`${botconfig.prefix}help | ${activities[i++ % activities.length]}`, { type: 'STREAMING', url: 'https://www.twitch.tv/akamebtw'}), 5000)
+       const guild = bot.guilds.get("693235861730492496");
+    setInterval(function () {
+       var memberCount = guild.members.filter(member => !member.user.bot).size;
+       var memberCountChannel = bot.channels.get("694227033944883220");
+       memberCountChannel.setName(`Alle User: ${memberCount}`);
+    }, 5000);
 });
 
 bot.on('message', (message) => {
@@ -54,7 +60,7 @@ bot.on('message', (message) => {
             message.delete().catch()
             let kickEmbed = new Discord.RichEmbed()
 
-              .setTitle("† Team Vaynce | Invite Link warnings")
+              .setTitle("VΛZE eSports | Invite Link warnings")
               .setColor("RANDOM")
               .addField("Target:", `${message.author}`, true)
               .addField("Staff:", `† Team Vaynce`, true)
