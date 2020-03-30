@@ -8,7 +8,7 @@ const fs        = require("fs");
 const path      = require('path');
 const bot       = new Discord.Client({ disableEveryone: true });
 const client    = new Discord.Client();
-const logs = new Discord.WebhookClient('663181513948659723', '95K9vplxMkFH9bRSVXnhItbFaYHD82zJpVAbyJHq5rdkcnPAEnOTIONndb0nv4T3ROzX');
+const logs = new Discord.WebhookClient('694209522503516241', 'eDsNKjiLMYwyEj_zBRncL3hsvEbqXTB13UJarekbvFXJvOFJV4NRefAli1jYQTykkZ7i');
 const welcomer = new Discord.WebhookClient('663181391546023948', '0_6rAzDOJWBRDl3FfSjwmX5IWHYu_7qiqKHbwlZkmhWfNbEXt7zR7PMr5k46wiGT7RdN');
 
 bot.commands = new Discord.Collection();
