@@ -43,7 +43,7 @@ bot.on("ready", async () => {
     bot.user.setStatus("dnd") //online, idle, dnd, invisible
 
     let activities = [`${bot.users.size} users.`], i = 0; // `${bot.guilds.size} servers.`, `${bot.users.size} users.`, 
-    setInterval(() => bot.user.setActivity(`${botconfig.prefix}help | ${activities[i++ % activities.length]}`, { type: 'STREAMING', url: 'https://www.twitch.tv/akamebtw'}), 5000)
+        setInterval(() => bot.user.setActivity(`${botconfig.prefix}help | ${activities[i++ % activities.length]}`, { type: 'WATCHING'}), 5000)
        const guild = bot.guilds.get("693235861730492496");
     setInterval(function () {
        var memberCount = guild.members.filter(member => !member.user.bot).size;
